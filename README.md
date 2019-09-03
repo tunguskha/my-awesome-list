@@ -1,6 +1,8 @@
 # <center>My awesome list</center>
 
-![Preview](preview.jpg)
+<p align="center">
+  <img width="460" height="300" src="preview.png">
+</p>
 
 ---
 
