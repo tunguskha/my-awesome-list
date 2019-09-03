@@ -1,5 +1,5 @@
 ---
 layout: home
 title: homepage
-description: Launch your own list right now!
+description: My awesome list is a custom theme for creating a site with a directory of websites using stackbit.
 ---
