@@ -1,4 +1,6 @@
-# <center>My awesome list</center>
+<h1 align="center">
+  My awesome list
+</h1>
 
 <p align="center">
   <img width="460" height="300" src="preview.png">
