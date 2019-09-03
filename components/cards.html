@@ -1,0 +1,22 @@
+{% if site.data.items.item %}
+<div class="row">
+    <ul class="cards">
+        {% for item in site.data.items.item %}
+        <li class="col s12 m6">
+            <div class="card">
+                <div class="card__img">
+                    <div class="ishadow">
+                        <img data-blur='20' , data-hover='true' src="{{ item.image }}" alt>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <div class="card__title">{{ item.title }}</div>
+                    <div class="card__description">{{ item.description }}</div>
+                    <a href="{{ item.linkUrl }}" class="card__btn" target="_blank">{{ item.link }}</a>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

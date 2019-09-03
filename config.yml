@@ -1,0 +1,11 @@
+title: "My awesome list"
+
+params:
+  logo: 'My awesome list'
+
+sass:
+  input_file: sass/main.scss
+  output_file: assets/css/main.css
+  indentWidth: 4
+  outputStyle: nested
+  precision: 10

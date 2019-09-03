@@ -1,0 +1,166 @@
+@import 'partials/variables/_medias.scss';
+@import 'partials/variables/_colors.scss';
+@import 'partials/_grid.scss';
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.45;
+    background: $theme-color-1;
+    color: $theme-color-3;
+    transition: all .3s;
+}
+
+nav {
+    padding: 3.5em 0;
+
+    .logo {
+        letter-spacing: -.05em;
+        float: left;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .right-nav {
+        float: right;
+        margin: 3px 0 0 0;
+
+        #switch-theme {
+            float: left;
+            margin: 0 0 0 15px;
+            cursor: pointer;
+            font-size: 1.25em;
+        }
+    }
+}
+
+.intro {
+    padding: 15vh 0;
+}
+
+ul.cards {
+    li {
+        &:nth-child(odd) {
+            padding: 10em 1.5em 0 .75em;
+        }
+
+        &:nth-child(even) {
+            padding: 10em .75em 0 1.5em;
+        }
+    }
+}
+
+.card {
+    background: $theme-color-0;
+    padding: 0 2em 2em 2em;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+    &:hover {
+        box-shadow: 0px 25px 30px -15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+    }
+
+    &__content {
+        margin: .5em 0 0;
+    }
+
+    &__img {
+        transform: translateY(-2em);
+    }
+
+    &__title {
+        line-height: 1.2;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    &__description {
+        margin: 1em 0 5em 0;
+        color: $theme-color-2;
+    }
+
+    &__btn {
+        display: table;
+        padding: .75em 1.75em;
+        background: $theme-color-3;
+        color: $theme-color-0;
+        border-radius: 3em;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, .75);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+        &:hover {
+            box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, .5);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.ishadow {
+    img {
+        position: relative;
+        z-index: 2;
+        border-radius: 8px;
+    }
+}
+
+.image-shadow {
+    z-index: 1 !important;
+}
+
+footer {
+    margin: 5em 0 0 0;
+    text-align: center;
+    font-size: .75em;
+}
+
+@media screen and (max-width: $small-screen-up) {
+    ul.cards {
+        li {
+            &:nth-child(odd) {
+                padding: 10em .75em 0 .75em;
+
+                &:nth-child(even) {
+                    padding: 10em .75em 0 .75em;
+                }
+            }
+        }
+    }
+}

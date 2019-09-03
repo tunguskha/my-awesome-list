@@ -1,0 +1,74 @@
+stackbitVersion: ~0.2.39
+uploadDir: images
+metadata:
+  title: My awesome list
+  description: A starter theme for create a list using stackbit
+  author: Fabien 'tungu' Dutaud
+  authorURL: 'https://tungu.me'
+  images:
+    small: images/myAwesomeList-256x192.png
+    large: images/myAwesomeList-1024x768.png
+models:
+  config:
+    type: config
+    label: Config
+    fields:
+      - type: image
+        name: logo
+        label: Logo
+        description: the path of the logo image
+        required: true
+  home:
+    type: page
+    label: Home
+    template: home
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: description
+        label: Description
+        description: Baseline of your homepage
+  items:
+    type: data
+    file: items.json
+    label: Items
+    fields:
+      - type: list
+        name: item
+        label: Item
+        description: An item to be placed
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: image
+              name: image
+              label: Item image
+              required: true
+            - type: string
+              name: title
+              label: Title
+              required: true
+            - type: string
+              name: description
+              label: Description
+              required: true
+            - type: string
+              name: linkUrl
+              label: URL
+              widget: url
+              required: true
+            - type: string
+              name: link
+              label: Link title
+              required: true
+stackbit_banner:
+  show_banner: false
+  name: my-awesome-list
+  create_url: 'https://app.stackbit.com/create?theme=my-awesome-list'
+  github_url: 'https://github.com/tunguskha/my-awesome-list'
+staticDir: static

@@ -1,0 +1,45 @@
+{
+  "item": [{
+      "image": "./images/1.jpg",
+      "title": "This is the first item.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    },
+    {
+      "image": "./images/2.jpg",
+      "title": "And here the second one.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    },
+    {
+      "image": "./images/3.jpg",
+      "title": "Another one.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    },
+    {
+      "image": "./images/4.jpg",
+      "title": "Another one.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    },
+    {
+      "image": "./images/5.jpg",
+      "title": "Another one.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    },
+    {
+      "image": "./images/6.jpg",
+      "title": "Another one.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
+      "link": "Visit website",
+      "linkUrl": "#!"
+    }
+  ]
+}

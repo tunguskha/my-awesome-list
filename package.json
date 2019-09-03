@@ -1,0 +1,26 @@
+{
+  "name": "my-awesome-list",
+  "version": "1.0.0",
+  "description": "A starter theme for create a list using stackbit",
+  "main": "public/index.html",
+  "scripts": {
+    "build": "unibit build",
+    "develop": "unibit develop",
+    "start": "unibit develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunguskha/my-awesome-list"
+  },
+  "author": "Fabien 'tungu' Dutaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tunguskha/my-awesome-list/issues"
+  },
+  "homepage": "https://github.com/tunguskha/my-awesome-list",
+  "dependencies": {
+    "@stackbit/unibit": "~0.1.11",
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,23 @@
+$theme-color-0: #fff;
+$theme-color-1: #ebeff2;
+$theme-color-3: #08132E;
+$theme-color-2: rgba($theme-color-3, .65);
+
+:root {
+    --theme-color-0: #{$theme-color-0};
+    --theme-color-1: #{$theme-color-1};
+    --theme-color-2: #{$theme-color-2};
+    --theme-color-3: #{$theme-color-3};
+
+    &[dark] {
+        --theme-color-0: #{$theme-color-2};
+        --theme-color-1: #{$theme-color-3};
+        --theme-color-2: #{$theme-color-0};
+        --theme-color-3: #{$theme-color-1};
+    }
+}
+
+$theme-color-0: var(--theme-color-0);
+$theme-color-1: var(--theme-color-1);
+$theme-color-2: var(--theme-color-2);
+$theme-color-3: var(--theme-color-3);
