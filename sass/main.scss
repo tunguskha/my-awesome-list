@@ -156,10 +156,10 @@ footer {
         li {
             &:nth-child(odd) {
                 padding: 10em .75em 0 .75em;
+            }
 
-                &:nth-child(even) {
-                    padding: 10em .75em 0 .75em;
-                }
+            &:nth-child(even) {
+                padding: 10em .75em 0 .75em;
             }
         }
     }
