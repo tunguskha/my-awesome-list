@@ -13,10 +13,10 @@ models:
     type: config
     label: Config
     fields:
-      - type: image
+      - type: string
         name: logo
         label: Logo
-        description: the path of the logo image
+        description: Your site name (logo)
         required: true
   home:
     type: page
