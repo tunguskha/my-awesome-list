@@ -1,7 +1,11 @@
-# My awesome list
+# <center>My awesome list</center>
 
+![Preview](preview.jpg)
+
+---
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/tunguskha/my-awesome-list)
+
 
 ### Start creating your own list now!
 
