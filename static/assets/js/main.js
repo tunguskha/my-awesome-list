@@ -1,6 +1,6 @@
 // Theme switch
 var switcher = document.querySelector("#switch-theme");
-var icon = document.querySelector("#icon");
+var icon = document.querySelector("#icon.uil-sun, #icon.uil-moon");
 var shadowImage = document.querySelectorAll(".image-shadow");
 
 switcher.onclick = function (e) {
@@ -33,10 +33,10 @@ if (localStorage.getItem("theme") === "dark") {
   })
 }
 
-
 // Fix navbar on scroll
 var nav = document.querySelector('nav');
 var header = document.querySelector('.header');
+var search = document.querySelector("#search");
 var scrollObject = {};
 window.onscroll = getScrollPosition;
 
@@ -48,10 +48,32 @@ function getScrollPosition() {
   if (scrollObject.y > 100) {
     nav.classList.add("active");
     header.style.marginTop = "166px"; // 166 = nav height
+    search.classList.add("scroll")
   }
 
   else {
     nav.classList.remove("active");
     header.style.marginTop = "0";
+    search.classList.remove("scroll")
   }
 }
+
+// Search
+var jets = new Jets({
+  searchTag: '#search',
+  contentTag: '#searchContent'
+});
+
+var searchIcon = document.querySelector(".search i.uil-search");
+
+searchIcon.addEventListener("click", event => {
+
+  searchIcon.classList.toggle('uil-search');
+  searchIcon.classList.toggle('uil-multiply');
+  var searchInput = document.querySelector("input");
+  searchInput.value = '';
+  searchInput.classList.toggle('active');
+  jets.search()
+
+  event.preventDefault;
+});
