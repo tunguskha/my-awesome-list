@@ -1,25 +1,28 @@
 <nav>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div class="logo">{{ site.params.logo }}</div>
-        <div class="right-nav">
-          <div id="switch-theme">
-            <i id="icon" class="uil uil-sun"></i>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="logo">{{ site.params.logo }}</div>
+                <div class="right-nav">
+                    <div class="search">
+                        <input type="search" id="search" placeholder="Search...">
+                        <i id="icon" class="uil uil-search"></i>
+                    </div>
+                    <div id="switch-theme">
+                        <i id="icon" class="uil uil-sun"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
     </div>
-  </div>
 </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col l8 s12">
-      <div class="intro">
-        <h1>{{ page.params.description }}</h1>
-      </div>
+<div class="container header">
+    <div class="row">
+        <div class="col l8 s12">
+            <div class="intro">
+                <h1>{{ page.params.description }}</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
