@@ -4,17 +4,17 @@
   width: 90%;
 }
 
-@media #{$medium-and-up} {
-  .container {
-    width: 85%;
-  }
-}
+// @media #{$medium-and-up} {
+//   .container {
+//     width: 85%;
+//   }
+// }
 
-@media #{$large-and-up} {
-  .container {
-    width: 70%;
-  }
-}
+// @media #{$large-and-up} {
+//   .container {
+//     width: 70%;
+//   }
+// }
 
 .col .row {
   margin-left: (-1 * $gutter-width / 2);
