@@ -1,3 +1,4 @@
+// Theme switch
 var switcher = document.querySelector("#switch-theme");
 var icon = document.querySelector("#icon");
 var shadowImage = document.querySelectorAll(".image-shadow");
@@ -30,4 +31,27 @@ if (localStorage.getItem("theme") === "dark") {
   shadowImage.forEach(function (el) {
     el.style.display = 'none'
   })
+}
+
+
+// Fix navbar on scroll
+var nav = document.querySelector('nav');
+var header = document.querySelector('.header');
+var scrollObject = {};
+window.onscroll = getScrollPosition;
+
+function getScrollPosition() {
+  scrollObject = {
+    x: window.pageXOffset,
+    y: window.pageYOffset
+  }
+  if (scrollObject.y > 100) {
+    nav.classList.add("active");
+    header.style.marginTop = "166px"; // 166 = nav height
+  }
+
+  else {
+    nav.classList.remove("active");
+    header.style.marginTop = "0";
+  }
 }
