@@ -69,13 +69,68 @@ nav {
         float: right;
         margin: 3px 0 0 0;
 
-        #switch-theme {
+        #switch-theme,
+        .search {
             float: left;
-            margin: 0 0 0 15px;
-            cursor: pointer;
-            font-size: 1.25em;
+
+            i {
+                margin: 0 0 0 5px;
+                cursor: pointer;
+                font-size: 1.25em;
+            }
+        }
+
+        .search i {
+            position: relative;
+            z-index: 4;
+
+            &.uil-multiply {
+                color: #08132E;
+            }
         }
     }
+}
+
+
+
+input#search {
+    width: 0;
+    max-width: 800px;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    border: none;
+    background: white;
+    border-radius: 15em;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .05);
+    transition: all .4s ease-in-out;
+    outline: none;
+    color: #08132E;
+    font-weight: 600;
+
+    &.active {
+        width: 90%;
+        padding: 1.5em;
+
+        &.scroll {
+
+            padding: 1em 1.5em;
+        }
+    }
+
+    &.scroll {
+        top: .5em;
+
+    }
+
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 
 .intro {
