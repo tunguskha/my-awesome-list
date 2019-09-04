@@ -1,6 +1,6 @@
 {
   "name": "my-awesome-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A starter theme for create a list using stackbit",
   "main": "public/index.html",
   "scripts": {
