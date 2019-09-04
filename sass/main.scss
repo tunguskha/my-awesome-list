@@ -47,6 +47,17 @@ body {
 nav {
     padding: 3.5em 0;
 
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        padding: 1em 0 0 0;
+        background: $theme-color-0;
+        box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .05)
+    }
+
     .logo {
         letter-spacing: -.05em;
         float: left;
@@ -73,13 +84,7 @@ nav {
 
 ul.cards {
     li {
-        &:nth-child(odd) {
-            padding: 10em 1.5em 0 .75em;
-        }
-
-        &:nth-child(even) {
-            padding: 10em .75em 0 1.5em;
-        }
+        margin-top: 10em;
     }
 }
 
@@ -151,16 +156,24 @@ footer {
     font-size: .75em;
 }
 
-@media screen and (max-width: $small-screen-up) {
-    ul.cards {
-        li {
-            &:nth-child(odd) {
-                padding: 10em .75em 0 .75em;
-            }
-
-            &:nth-child(even) {
-                padding: 10em .75em 0 .75em;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    :root[dark] {
+        nav {
+            &.active {
+                -webkit-backdrop-filter: blur(15px);
+                backdrop-filter: blur(15px);
+                background-color: rgba(8, 19, 46, .3);
             }
         }
     }
+
+    nav {
+        &.active {
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            background-color: rgba(255, 255, 255, .7);
+        }
+    }
 }
+
+@media screen and (max-width: $small-screen-up) {}
