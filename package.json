@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/tunguskha/my-awesome-list",
   "dependencies": {
-    "@stackbit/unibit": "~0.1.11",
+    "@stackbit/unibit": "~0.1.20",
     "nodemon": "^1.19.1"
   }
 }
