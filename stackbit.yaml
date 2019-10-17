@@ -1,5 +1,10 @@
 stackbitVersion: ~0.2.39
+ssgName: unibit
+buildCommand: unibit build
+publishDir: output
+dataDir: data
 uploadDir: images
+pagesDir: content
 metadata:
   title: My awesome list
   description: A starter theme for create a list using stackbit
